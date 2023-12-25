@@ -36,10 +36,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(0, 119, 255);
   }
   
   .item .link:hover {
     cursor: pointer;
-    background-color: rgb(46, 46, 46);
+    background-color: black;
   }
