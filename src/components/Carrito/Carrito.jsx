@@ -2,6 +2,7 @@ import { useContext } from "react";
 
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
+import { FaTrashAlt } from "react-icons/fa";
 
 import "./Carrito.css";
 
@@ -12,7 +13,7 @@ const Carrito = () => {
   if (carrito.length === 0) {
     return (
       <div className="carrito-vacio">
-        <h2>Ooppss el carrito esta vacio 😢</h2>
+        <h2>Parece que tu carrito esta vacio 😢</h2>
         <Link className="button" to="/">
           Volver al inicio
         </Link>
@@ -46,7 +47,7 @@ const Carrito = () => {
         <p>Vaciar carrito</p>
         <FaTrashAlt size={25} />
       </div>
-      <Link to="/checkout">
+      <Link to="/Checkout">
           Continuar con mi compra
       </Link>
     </div>

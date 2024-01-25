@@ -6,7 +6,9 @@ import "./NavBar.css";
 const NavBar = () => {
 return (
     <div id="navbar">
-        <h1 id="brand">ElGato</h1>
+        <Link to="/" className="brand">
+            <img src="/img/elgatofavicon.png" alt="Logo ElGato"/> 
+        </Link>
         <ul>
             <li>
                 <Link to="/categorias/Decks">Stream Deck</Link>
@@ -20,7 +22,7 @@ return (
         </ul>
         <CartWidget />
     </div>
-)
-}
+    );
+};
 
 export default NavBar

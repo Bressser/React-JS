@@ -32,7 +32,6 @@ const Checkout = () => {
     const ordenesRef = collection(db, "ordenes");
     addDoc(ordenesRef, orden).then((respuesta) => {
       setIdOrden(respuesta.id)
-      //limpiar carrito
       borrarCarrito()
     });
   };
